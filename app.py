@@ -16,7 +16,7 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 storage = MemoryStorage()
 import qwestions
 
-bot = Bot(token='5199442094:AAFUOAPkmfujtfwadZBTI3OeGM9YxqvsTeo')
+bot = Bot(token='5199442094:AAFs7Am9OGfZPVik-33bMuGsEkzSgkCj6Gk')
 
 dp = Dispatcher(bot, storage=storage)
 
