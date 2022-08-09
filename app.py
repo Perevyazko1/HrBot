@@ -216,23 +216,6 @@ async def load_name(message: types.Message, state: FSMContext):
         await message.reply('Вопрос удален', reply_markup=nav.admin_menu)
         await del_qwes(state)  # выводил в базу
         await state.finish()
-#//////////////////////////////////////////////////////////////////////////
-# class FSMqwestion(StatesGroup):
-#     qwestion = State()
-
-# @dp.message_handler(state=None)
-# async def fsm_qwestion(message: types.Message):
-#     await FSMqwestion.qwestion.set()
-# # Ловим номер вопроса
-# @dp.message_handler(state=FSMqwestion.qwestion)
-# async def load_qwestion(message: types.Message, state: FSMContext):
-#     async with state.proxy() as data:
-#         data['qwestion'] = message.text
-#         num_del = str(tuple(data.values()))[2:-3]
-#     # выводил в базу
-#     await state.finish()
-#     print(num_del)
-#//////////////////////////////////////////////////////////////////////////
 #____________________Получение списка вопросов_______________
 
 @dp.message_handler(commands='Получить_список_вопросов') # запрос вопроса из бд
