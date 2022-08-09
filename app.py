@@ -274,138 +274,138 @@ async def get_qwestions(message: types.Message):
         await FSMdonload.video.set()
 
 
-    # elif quantitystr > 2 and message.text == 'Вопрос №2' :
-    #     await message.answer(f'<b>{clear_text(qwestion[1])}</b>\n\n'
-    #                          f'<i>(нажми на 📎 и запиши видеоответ)</i>', reply_markup=nav.qwestionMenu_3,parse_mode=types.ParseMode.HTML)
-    #     bodynowqwestion = qwestion[1]
-    #     await FSMdonload.video.set()
-    # elif quantitystr == 2 and message.text == 'Вопрос №2':
-    #     await message.answer(f'<b>{clear_text(qwestion[1])}</b>\n\n'
-    #                          f'<i>(нажми на 📎 и запиши видеоответ)</i>\n\n'
-    #                          f'<u>Это был последний вопрос, спасибо за интервью</u>', reply_markup=nav.mainMenu,parse_mode=types.ParseMode.HTML)
-    #     bodynowqwestion = qwestion[1]
-    #     await bot.send_message(admins_id.id_admin, f'Сохранено интервью от: <b>{name}</b>',
-    #                            parse_mode=types.ParseMode.HTML)
-    #     await FSMdonload.video.set()
-    #
-    #
-    # elif quantitystr > 3 and message.text == 'Вопрос №3' :
-    #     await message.answer(f'<b>{clear_text(qwestion[2])}</b>\n\n'
-    #                          f'<i>(нажми на 📎 и запиши видеоответ)</i>', reply_markup=nav.qwestionMenu_4,parse_mode=types.ParseMode.HTML)
-    #     bodynowqwestion = qwestion[2]
-    #     await FSMdonload.video.set()
-    # elif quantitystr == 3 and message.text == 'Вопрос №3':
-    #     await message.answer(f'<b>{clear_text(qwestion[2])}</b>\n\n'
-    #                          f'<i>(нажми на 📎 и запиши видеоответ)</i>\n\n'
-    #                          f'<u>Это был последний вопрос, спасибо за интервью</u>', reply_markup=nav.mainMenu,parse_mode=types.ParseMode.HTML)
-    #     bodynowqwestion = qwestion[2]
-    #     await bot.send_message(admins_id.id_admin, f'Сохранено интервью от: <b>{name}</b>',
-    #                            parse_mode=types.ParseMode.HTML)
-    #     await FSMdonload.video.set()
-    #
-    #
-    # elif quantitystr > 4 and message.text == 'Вопрос №4' :
-    #     await message.answer(f'<b>{clear_text(qwestion[3])}</b>\n\n'
-    #                          f'<i>(нажми на 📎 и запиши видеоответ)</i>', reply_markup=nav.qwestionMenu_5,parse_mode=types.ParseMode.HTML)
-    #     bodynowqwestion = qwestion[3]
-    #     await FSMdonload.video.set()
-    # elif quantitystr == 4 and message.text == 'Вопрос №4':
-    #     await message.answer(f'<b>{clear_text(qwestion[3])}</b>\n\n'
-    #                          f'<i>(нажми на 📎 и запиши видеоответ)</i>\n\n'
-    #                          f'<u>Это был последний вопрос, спасибо за интервью</u>', reply_markup=nav.mainMenu,parse_mode=types.ParseMode.HTML)
-    #     bodynowqwestion = qwestion[3]
-    #     await bot.send_message(admins_id.id_admin, f'Сохранено интервью от: <b>{name}</b>',
-    #                            parse_mode=types.ParseMode.HTML)
-    #     await FSMdonload.video.set()
-    #
-    #
-    # elif quantitystr > 5 and message.text == 'Вопрос №5' :
-    #     await message.answer(f'<b>{clear_text(qwestion[4])}</b>\n\n'
-    #                          f'<i>(нажми на 📎 и запиши видеоответ)</i>', reply_markup=nav.qwestionMenu_6,parse_mode=types.ParseMode.HTML)
-    #     bodynowqwestion = qwestion[4]
-    #     await FSMdonload.video.set()
-    # elif quantitystr == 5 and message.text == 'Вопрос №5':
-    #     await message.answer(f'<b>{clear_text(qwestion[4])}</b>\n\n'
-    #                          f'<i>(нажми на 📎 и запиши видеоответ)</i>\n\n'
-    #                          f'<u>Это был последний вопрос, спасибо за интервью</u>', reply_markup=nav.mainMenu,parse_mode=types.ParseMode.HTML)
-    #     bodynowqwestion = qwestion[4]
-    #     await bot.send_message(admins_id.id_admin, f'Сохранено интервью от: <b>{name}</b>',
-    #                            parse_mode=types.ParseMode.HTML)
-    #     await FSMdonload.video.set()
-    #
-    # elif quantitystr > 6 and message.text == 'Вопрос №6' :
-    #     await message.answer(f'<b>{clear_text(qwestion[5])}</b>\n\n'
-    #                          f'<i>(нажми на 📎 и запиши видеоответ)</i>', reply_markup=nav.qwestionMenu_7,parse_mode=types.ParseMode.HTML)
-    #     bodynowqwestion = qwestion[5]
-    #     await FSMdonload.video.set()
-    # elif quantitystr == 6 and message.text == 'Вопрос №6':
-    #     await message.answer(f'<b>{clear_text(qwestion[5])}</b>\n\n'
-    #                          f'<i>(нажми на 📎 и запиши видеоответ)</i>\n\n'
-    #                          f'<u>Это был последний вопрос, спасибо за интервью</u>', reply_markup=nav.mainMenu,parse_mode=types.ParseMode.HTML)
-    #     bodynowqwestion = qwestion[5]
-    #     await bot.send_message(admins_id.id_admin, f'Сохранено интервью от: <b>{name}</b>',
-    #                            parse_mode=types.ParseMode.HTML)
-    #     await FSMdonload.video.set()
-    #
-    #
-    # elif quantitystr > 7 and message.text == 'Вопрос №7' :
-    #     await message.answer(f'<b>{clear_text(qwestion[6])}</b>\n\n'
-    #                          f'<i>(нажми на 📎 и запиши видеоответ)</i>', reply_markup=nav.qwestionMenu_8,parse_mode=types.ParseMode.HTML)
-    #     bodynowqwestion = qwestion[6]
-    #     await FSMdonload.video.set()
-    # elif quantitystr == 7 and message.text == 'Вопрос №7':
-    #     await message.answer(f'<b>{clear_text(qwestion[6])}</b>\n\n'
-    #                          f'<i>(нажми на 📎 и запиши видеоответ)</i>\n\n'
-    #                          f'<u>Это был последний вопрос, спасибо за интервью</u>', reply_markup=nav.mainMenu,parse_mode=types.ParseMode.HTML)
-    #     bodynowqwestion = qwestion[6]
-    #     await bot.send_message(admins_id.id_admin, f'Сохранено интервью от: <b>{name}</b>',
-    #                            parse_mode=types.ParseMode.HTML)
-    #     await FSMdonload.video.set()
-    #
-    #
-    # elif quantitystr > 8 and message.text == 'Вопрос №8' :
-    #     await message.answer(f'<b>{clear_text(qwestion[7])}</b>\n\n'
-    #                          f'<i>(нажми на 📎 и запиши видеоответ)</i>', reply_markup=nav.qwestionMenu_9,parse_mode=types.ParseMode.HTML)
-    #     bodynowqwestion = qwestion[7]
-    #     await FSMdonload.video.set()
-    # elif quantitystr == 8 and message.text == 'Вопрос №8':
-    #     await message.answer(f'<b>{clear_text(qwestion[7])}</b>\n\n'
-    #                          f'<i>(нажми на 📎 и запиши видеоответ)</i>\n\n'
-    #                          f'<u>Это был последний вопрос, спасибо за интервью</u>', reply_markup=nav.mainMenu,parse_mode=types.ParseMode.HTML)
-    #     bodynowqwestion = qwestion[7]
-    #     await bot.send_message(admins_id.id_admin, f'Сохранено интервью от: <b>{name}</b>',
-    #                            parse_mode=types.ParseMode.HTML)
-    #     await FSMdonload.video.set()
-    #
-    #
-    # elif quantitystr > 9 and message.text == 'Вопрос №9' :
-    #     await message.answer(f'<b>{clear_text(qwestion[8])}</b>\n\n'
-    #                          f'<i>(нажми на 📎 и запиши видеоответ)</i>', reply_markup=nav.qwestionMenu_10,parse_mode=types.ParseMode.HTML)
-    #     bodynowqwestion = qwestion[8]
-    #     await FSMdonload.video.set()
-    # elif quantitystr == 9 and message.text == 'Вопрос №9':
-    #     await message.answer(f'<b>{clear_text(qwestion[8])}</b>\n\n'
-    #                          f'<i>(нажми на 📎 и запиши видеоответ)</i>\n\n'
-    #                          f'<u>Это был последний вопрос, спасибо за интервью</u>', reply_markup=nav.mainMenu,parse_mode=types.ParseMode.HTML)
-    #     bodynowqwestion = qwestion[8]
-    #     await bot.send_message(admins_id.id_admin, f'Сохранено интервью от: <b>{name}</b>',
-    #                            parse_mode=types.ParseMode.HTML)
-    #     await FSMdonload.video.set()
-    #
-    #
-    # elif quantitystr > 10 and message.text == 'Вопрос №10' :
-    #     await message.answer(f'<b>{clear_text(qwestion[9])}</b>\n\n'
-    #                          f'<i>(нажми на 📎 и запиши видеоответ)</i>', reply_markup=nav.qwestionMenu_11,parse_mode=types.ParseMode.HTML)
-    #     bodynowqwestion = qwestion[9]
-    #     await FSMdonload.video.set()
-    # elif quantitystr == 10 and message.text == 'Вопрос №10':
-    #     await message.answer(f'<b>{clear_text(qwestion[9])}</b>\n\n'
-    #                          f'<i>(нажми на 📎 и запиши видеоответ)</i>\n\n'
-    #                          f'<u>Это был последний вопрос, спасибо за интервью</u>', reply_markup=nav.mainMenu,parse_mode=types.ParseMode.HTML)
-    #     bodynowqwestion = qwestion[9]
-    #     await bot.send_message(admins_id.id_admin, f'Сохранено интервью от: <b>{name}</b>',
-    #                            parse_mode=types.ParseMode.HTML)
-    #     await FSMdonload.video.set()
+    elif quantitystr > 2 and message.text == 'Вопрос №2' :
+        await message.answer(f'<b>{clear_text(qwestion[1])}</b>\n\n'
+                             f'<i>(нажми на 📎 и запиши видеоответ)</i>', reply_markup=nav.qwestionMenu_3,parse_mode=types.ParseMode.HTML)
+        bodynowqwestion = qwestion[1]
+        await FSMdonload.video.set()
+    elif quantitystr == 2 and message.text == 'Вопрос №2':
+        await message.answer(f'<b>{clear_text(qwestion[1])}</b>\n\n'
+                             f'<i>(нажми на 📎 и запиши видеоответ)</i>\n\n'
+                             f'<u>Это был последний вопрос, спасибо за интервью</u>', reply_markup=nav.mainMenu,parse_mode=types.ParseMode.HTML)
+        bodynowqwestion = qwestion[1]
+        await bot.send_message(admins_id.id_admin, f'Сохранено интервью от: <b>{name}</b>',
+                               parse_mode=types.ParseMode.HTML)
+        await FSMdonload.video.set()
+
+
+    elif quantitystr > 3 and message.text == 'Вопрос №3' :
+        await message.answer(f'<b>{clear_text(qwestion[2])}</b>\n\n'
+                             f'<i>(нажми на 📎 и запиши видеоответ)</i>', reply_markup=nav.qwestionMenu_4,parse_mode=types.ParseMode.HTML)
+        bodynowqwestion = qwestion[2]
+        await FSMdonload.video.set()
+    elif quantitystr == 3 and message.text == 'Вопрос №3':
+        await message.answer(f'<b>{clear_text(qwestion[2])}</b>\n\n'
+                             f'<i>(нажми на 📎 и запиши видеоответ)</i>\n\n'
+                             f'<u>Это был последний вопрос, спасибо за интервью</u>', reply_markup=nav.mainMenu,parse_mode=types.ParseMode.HTML)
+        bodynowqwestion = qwestion[2]
+        await bot.send_message(admins_id.id_admin, f'Сохранено интервью от: <b>{name}</b>',
+                               parse_mode=types.ParseMode.HTML)
+        await FSMdonload.video.set()
+
+
+    elif quantitystr > 4 and message.text == 'Вопрос №4' :
+        await message.answer(f'<b>{clear_text(qwestion[3])}</b>\n\n'
+                             f'<i>(нажми на 📎 и запиши видеоответ)</i>', reply_markup=nav.qwestionMenu_5,parse_mode=types.ParseMode.HTML)
+        bodynowqwestion = qwestion[3]
+        await FSMdonload.video.set()
+    elif quantitystr == 4 and message.text == 'Вопрос №4':
+        await message.answer(f'<b>{clear_text(qwestion[3])}</b>\n\n'
+                             f'<i>(нажми на 📎 и запиши видеоответ)</i>\n\n'
+                             f'<u>Это был последний вопрос, спасибо за интервью</u>', reply_markup=nav.mainMenu,parse_mode=types.ParseMode.HTML)
+        bodynowqwestion = qwestion[3]
+        await bot.send_message(admins_id.id_admin, f'Сохранено интервью от: <b>{name}</b>',
+                               parse_mode=types.ParseMode.HTML)
+        await FSMdonload.video.set()
+
+
+    elif quantitystr > 5 and message.text == 'Вопрос №5' :
+        await message.answer(f'<b>{clear_text(qwestion[4])}</b>\n\n'
+                             f'<i>(нажми на 📎 и запиши видеоответ)</i>', reply_markup=nav.qwestionMenu_6,parse_mode=types.ParseMode.HTML)
+        bodynowqwestion = qwestion[4]
+        await FSMdonload.video.set()
+    elif quantitystr == 5 and message.text == 'Вопрос №5':
+        await message.answer(f'<b>{clear_text(qwestion[4])}</b>\n\n'
+                             f'<i>(нажми на 📎 и запиши видеоответ)</i>\n\n'
+                             f'<u>Это был последний вопрос, спасибо за интервью</u>', reply_markup=nav.mainMenu,parse_mode=types.ParseMode.HTML)
+        bodynowqwestion = qwestion[4]
+        await bot.send_message(admins_id.id_admin, f'Сохранено интервью от: <b>{name}</b>',
+                               parse_mode=types.ParseMode.HTML)
+        await FSMdonload.video.set()
+
+    elif quantitystr > 6 and message.text == 'Вопрос №6' :
+        await message.answer(f'<b>{clear_text(qwestion[5])}</b>\n\n'
+                             f'<i>(нажми на 📎 и запиши видеоответ)</i>', reply_markup=nav.qwestionMenu_7,parse_mode=types.ParseMode.HTML)
+        bodynowqwestion = qwestion[5]
+        await FSMdonload.video.set()
+    elif quantitystr == 6 and message.text == 'Вопрос №6':
+        await message.answer(f'<b>{clear_text(qwestion[5])}</b>\n\n'
+                             f'<i>(нажми на 📎 и запиши видеоответ)</i>\n\n'
+                             f'<u>Это был последний вопрос, спасибо за интервью</u>', reply_markup=nav.mainMenu,parse_mode=types.ParseMode.HTML)
+        bodynowqwestion = qwestion[5]
+        await bot.send_message(admins_id.id_admin, f'Сохранено интервью от: <b>{name}</b>',
+                               parse_mode=types.ParseMode.HTML)
+        await FSMdonload.video.set()
+
+
+    elif quantitystr > 7 and message.text == 'Вопрос №7' :
+        await message.answer(f'<b>{clear_text(qwestion[6])}</b>\n\n'
+                             f'<i>(нажми на 📎 и запиши видеоответ)</i>', reply_markup=nav.qwestionMenu_8,parse_mode=types.ParseMode.HTML)
+        bodynowqwestion = qwestion[6]
+        await FSMdonload.video.set()
+    elif quantitystr == 7 and message.text == 'Вопрос №7':
+        await message.answer(f'<b>{clear_text(qwestion[6])}</b>\n\n'
+                             f'<i>(нажми на 📎 и запиши видеоответ)</i>\n\n'
+                             f'<u>Это был последний вопрос, спасибо за интервью</u>', reply_markup=nav.mainMenu,parse_mode=types.ParseMode.HTML)
+        bodynowqwestion = qwestion[6]
+        await bot.send_message(admins_id.id_admin, f'Сохранено интервью от: <b>{name}</b>',
+                               parse_mode=types.ParseMode.HTML)
+        await FSMdonload.video.set()
+
+
+    elif quantitystr > 8 and message.text == 'Вопрос №8' :
+        await message.answer(f'<b>{clear_text(qwestion[7])}</b>\n\n'
+                             f'<i>(нажми на 📎 и запиши видеоответ)</i>', reply_markup=nav.qwestionMenu_9,parse_mode=types.ParseMode.HTML)
+        bodynowqwestion = qwestion[7]
+        await FSMdonload.video.set()
+    elif quantitystr == 8 and message.text == 'Вопрос №8':
+        await message.answer(f'<b>{clear_text(qwestion[7])}</b>\n\n'
+                             f'<i>(нажми на 📎 и запиши видеоответ)</i>\n\n'
+                             f'<u>Это был последний вопрос, спасибо за интервью</u>', reply_markup=nav.mainMenu,parse_mode=types.ParseMode.HTML)
+        bodynowqwestion = qwestion[7]
+        await bot.send_message(admins_id.id_admin, f'Сохранено интервью от: <b>{name}</b>',
+                               parse_mode=types.ParseMode.HTML)
+        await FSMdonload.video.set()
+
+
+    elif quantitystr > 9 and message.text == 'Вопрос №9' :
+        await message.answer(f'<b>{clear_text(qwestion[8])}</b>\n\n'
+                             f'<i>(нажми на 📎 и запиши видеоответ)</i>', reply_markup=nav.qwestionMenu_10,parse_mode=types.ParseMode.HTML)
+        bodynowqwestion = qwestion[8]
+        await FSMdonload.video.set()
+    elif quantitystr == 9 and message.text == 'Вопрос №9':
+        await message.answer(f'<b>{clear_text(qwestion[8])}</b>\n\n'
+                             f'<i>(нажми на 📎 и запиши видеоответ)</i>\n\n'
+                             f'<u>Это был последний вопрос, спасибо за интервью</u>', reply_markup=nav.mainMenu,parse_mode=types.ParseMode.HTML)
+        bodynowqwestion = qwestion[8]
+        await bot.send_message(admins_id.id_admin, f'Сохранено интервью от: <b>{name}</b>',
+                               parse_mode=types.ParseMode.HTML)
+        await FSMdonload.video.set()
+
+
+    elif quantitystr > 10 and message.text == 'Вопрос №10' :
+        await message.answer(f'<b>{clear_text(qwestion[9])}</b>\n\n'
+                             f'<i>(нажми на 📎 и запиши видеоответ)</i>', reply_markup=nav.qwestionMenu_11,parse_mode=types.ParseMode.HTML)
+        bodynowqwestion = qwestion[9]
+        await FSMdonload.video.set()
+    elif quantitystr == 10 and message.text == 'Вопрос №10':
+        await message.answer(f'<b>{clear_text(qwestion[9])}</b>\n\n'
+                             f'<i>(нажми на 📎 и запиши видеоответ)</i>\n\n'
+                             f'<u>Это был последний вопрос, спасибо за интервью</u>', reply_markup=nav.mainMenu,parse_mode=types.ParseMode.HTML)
+        bodynowqwestion = qwestion[9]
+        await bot.send_message(admins_id.id_admin, f'Сохранено интервью от: <b>{name}</b>',
+                               parse_mode=types.ParseMode.HTML)
+        await FSMdonload.video.set()
 
 
 
