@@ -272,27 +272,6 @@ async def get_qwestions(message: types.Message):
         bodynowqwestion = qwestion[0]
         await bot.send_message(admins_id.id_admin, f'Сохранено интервью от: <b>{name}</b>',parse_mode=types.ParseMode.HTML)
         await FSMdonload.video.set()
-    count = 0
-    while True:
-        count += 1
-        if quantitystr > count and input('...') == 'Следующий вопрос' :
-            await message.answer(f'<b>{clear_text(qwestion[count])}</b>\n\n'
-                                     f'<i>(нажми на 📎 и запиши видеоответ)</i>', reply_markup=nav.qwestionMenu_2,
-                                     parse_mode=types.ParseMode.HTML)
-            bodynowqwestion = qwestion[count]
-            await FSMdonload.video.set()
-        elif quantitystr == count and message.text == 'Следующий вопрос':
-            await message.answer(f'<b>{clear_text(qwestion[count])}</b>\n\n'
-                                     f'<i>(нажми на 📎 и запиши видеоответ)</i>\n\n'
-                                     f'<u>Это был последний вопрос, спасибо за интервью</u>', reply_markup=nav.mainMenu,
-                                     parse_mode=types.ParseMode.HTML)
-            bodynowqwestion = qwestion[count]
-            await bot.send_message(admins_id.id_admin, f'Сохранено интервью от: <b>{name}</b>',
-                                       parse_mode=types.ParseMode.HTML)
-            await FSMdonload.video.set()
-            break
-        else:
-            break
 
 
     # elif quantitystr > 2 and message.text == 'Вопрос №2' :
