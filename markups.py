@@ -22,7 +22,7 @@ namemenu = ReplyKeyboardMarkup(resize_keyboard=True).add(btnname)
 # otherMenudel = ReplyKeyboardRemove(resize_keyboard=True).add(btnYes,btnNO,btnmainMenu)
 # ___qwestions menu___
 btnqwestion_1=KeyboardButton('Вопрос №1')
-btnqwestion_2=KeyboardButton('Следующий вопрос')
+btnqwestion_2=KeyboardButton('Вопрос №2')
 btnqwestion_3=KeyboardButton('Вопрос №3')
 btnqwestion_4=KeyboardButton('Вопрос №4')
 btnqwestion_5=KeyboardButton('Вопрос №5')
