@@ -16,7 +16,8 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 storage = MemoryStorage()
 import qwestions
 
-bot = Bot(token='5199442094:AAFs7Am9OGfZPVik-33bMuGsEkzSgkCj6Gk')
+bot = Bot(token='5199442094:AAHw7yUztLU981nH7CerRxTOO-sL-c7ZF6s')
+
 
 dp = Dispatcher(bot, storage=storage)
 
@@ -82,7 +83,7 @@ async def get_video(state): # вставка имени в запрос sql
     async with state.proxy() as data:
         # await message.reply(str(data))
         profile = str(tuple(data.values()))[2:-3]
-        print(tuple(data.values()))
+        print(profile)
 
         reqwest = f"select *,(select profile.name from profile where profile.idname=video.idprofile)as new from video where new like '{profile}'"
         bodyreqwest = None
@@ -90,14 +91,17 @@ async def get_video(state): # вставка имени в запрос sql
 
         if not bodyreqwest:
             await bot.send_message(admins_id.id_admin, 'Но имя не найдено.', reply_markup=nav.admin_menu)
+            test=cur.execute(f"select * from profile where name like '{profile}'").fetchall()
+            print(test)
         else:
             for getv in cur.execute(reqwest).fetchall():
+                print(getv)
                 await bot.send_video(admins_id.id_admin, getv[1],caption=getv[0])
             reqwest_number_phone = f"select * from profile where name like '{profile}'"
             card_profile = cur.execute(reqwest_number_phone).fetchall()
             card_profile = card_profile[0]
-            print(card_profile[1])
-            await bot.send_contact(admins_id.id_admin, int(card_profile[2]), card_profile[0])
+            print(f'проверка {card_profile}')
+            await bot.send_contact(admins_id.id_admin, card_profile[2], card_profile[0])
 
 
 async def del_qwes(state):  # удаление вопоса
@@ -224,6 +228,7 @@ async def get_qwestions_list(message: types.Message):
     base = sq.connect('data.db')
     cur = base.cursor()
     qwestion = cur.execute('SELECT * FROM qwestions').fetchall()
+    print(qwestion)
     result = ""
     for qwestion_list in qwestion:
         result += f" {qwestion_list}\n"
