@@ -118,6 +118,7 @@ async def del_qwes(state):  # удаление вопоса
 
 # _____________________________________класс для сохранения вопросов___________________________________
 
+
 class FSMqwestion(StatesGroup):
     number = State()
     qwes = State()
@@ -163,6 +164,7 @@ class FSMAdmin(StatesGroup):
 async def fsm_message(message: types.Message):
     await message.reply('Введите Имя и Фамилию', reply_markup=ReplyKeyboardRemove())
     await FSMAdmin.name.set()
+
 
 # Ловим имя и id
 @dp.message_handler(state=FSMAdmin.name)
