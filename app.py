@@ -15,6 +15,7 @@ import os
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 storage = MemoryStorage()
 import qwestions
+import re
 
 bot = Bot(token='5199442094:AAHw7yUztLU981nH7CerRxTOO-sL-c7ZF6s')
 
@@ -22,16 +23,9 @@ bot = Bot(token='5199442094:AAHw7yUztLU981nH7CerRxTOO-sL-c7ZF6s')
 dp = Dispatcher(bot, storage=storage)
 
 def clear_text(a):
-   a = str(a)
-   a = a.split("'")
-   a = ''.join(a)
-   a = a.split(")")
-   a = ''.join(a)
-   a = a.split("(")
-   a = ''.join(a)
-   a = a.split(",")
-   a = ''.join(a)
-   return a
+    a = str(a)
+    a = re.sub(r"[',)(]", "", a)
+    return a
 
 @dp.message_handler(commands="start")
 async def start(message: types.Message):
